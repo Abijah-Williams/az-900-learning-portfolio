@@ -1,1 +1,149 @@
+# Project 01: School Cloud Solution
 
+## Project Overview
+
+This project explores how a small school could use Microsoft Azure to host an online learning platform while managing uncertain growth, infrastructure costs, security and service availability.
+
+The school currently serves 500 students and expects enrolment to reach 2,000 within two years. Because this is a projection rather than a certainty, the school needs an approach that can accommodate growth without unnecessarily investing in unused infrastructure.
+
+**Project type:** Cloud architecture design and foundational cloud planning  
+**Certification alignment:** Microsoft Azure Fundamentals (AZ-900)  
+**Status:** Initial design — not deployed in Azure
+
+## 1. Business Problem
+
+The school needs an online platform where students and teachers can access learning materials, submit assignments and use educational services.
+
+Traditional on-premises infrastructure would require the school to purchase and maintain physical servers, provide suitable facilities, and plan capacity for future demand.
+
+If actual enrolment is lower than expected, the school could pay for unused capacity. If enrolment grows faster than expected, the infrastructure could become insufficient.
+
+The school needs a flexible approach that supports changing demand while maintaining cost control, security and service availability.
+
+## 2. Proposed Solution
+
+Consider Microsoft Azure as the cloud platform for the school's application and supporting services.
+
+The proposed solution would use appropriate compute or application-hosting resources, storage, networking and a database where required.
+
+The final choice of services would depend on the application's architecture, workload, security requirements, expected traffic and budget.
+
+### Potential Azure Services
+
+| Requirement                  | Potential Azure service                     | Purpose                                                     |
+|------------------------------|---------------------------------------------|-------------------------------------------------------------|
+| Application hosting          | Azure App Service or Azure Virtual Machines | Host the learning application, depending on its requirements|
+| Learning materials and files | Azure Blob Storage                          | Store documents, images and other files                     |
+| Structured records           | Azure SQL Database                          | Store structured application data                           |
+| Network isolation            | Azure Virtual Network, where applicable     | Control network connectivity and isolation                  |
+| Identity and access          | Microsoft Entra ID and Azure RBAC           | Manage identities and access to supported resources         |
+| Monitoring                   | Azure Monitor                               | Collect monitoring data and help investigate issues         |
+| Cost management              | Microsoft Cost Management                   | Review and manage cloud expenditure                         |
+
+These are candidate services, not a final implementation. Not every service is required for every application.
+
+## 3. Why Cloud Computing?
+
+### Flexible Capacity
+
+    Cloud services can allow the school to provision resources as its needs develop, rather than purchasing all the hardware required for a future enrolment estimate upfront.
+
+### Reduced Infrastructure Burden
+
+    Using cloud infrastructure can reduce the need to maintain physical servers and supporting facilities. The school would still need access to manage its application, security, access, costs and operations.
+
+### Consumption-Based Pricing
+
+    Depending on the service and pricing model, the school may pay for resource consumption rather than purchasing all its infrastructure in advance.
+    This can help align expenditure with demand, but it does not guarantee lower costs.
+
+## 4. Scaling Strategy
+
+  The school should plan for both long-term enrolment growth and short-term traffic spikes.
+
+- Vertical scaling: Increase or decrease the capacity of an existing server or resource where supported.
+- Horizontal scaling: Add or remove application instances to distribute workloads.
+- Elasticity: Adjust resources as demand changes.
+- Monitoring: Observe utilisation, response times and errors to identify capacity problems.
+- Load testing: Test the application's performance under representative traffic before major examination periods.
+
+Where the selected service supports it, autoscaling can adjust capacity according to configured rules and limits.
+
+Scaling must be designed and configured appropriately. It should not be assumed to happen automatically.
+
+## 5. Cost Management
+
+Potential cost drivers include compute usage, storage capacity, data transfers, database usage, monitoring and backup services.
+
+Recommended controls:
+
+1. Estimate costs before deployment using the Azure Pricing Calculator.
+2. Define a budget and configure appropriate alerts.
+3. Review resource utilisation and actual spending regularly.
+4. Identify idle or oversized resources and reduce capacity where appropriate.
+5. Understand which charges continue when resources are stopped.
+6. Review backup, redundancy and data-retention requirements against the budget.
+
+Budget alerts provide visibility but should not be treated as a guaranteed spending limit.
+
+## 6. Security and Reliability
+
+Because the platform may handle student records, security and reliability must be part of the design.
+
+Recommended considerations:
+
+- Apply least-privilege access and appropriate role assignments.
+- Use suitable authentication and protect administrative accounts.
+- Protect sensitive data in transit and at rest using supported controls.
+- Configure appropriate backups and periodically test restoration.
+- Monitor service health, application errors and resource utilisation.
+- Plan for outages and document recovery procedures.
+- Determine appropriate availability and recovery targets based on business needs.
+
+Cloud adoption does not automatically eliminate security risks or guarantee uninterrupted service.
+
+## 7. Risks and Mitigations
+
+| Risk                      | Mitigation                                                  |
+|---------------------------|-------------------------------------------------------------|
+| Unexpected cloud spending | Cost estimates, budgets, alerts and regular reviews         |
+| Unused resources          | Resource inventory, utilisation reviews and cleanup         |
+| Increased demand          | Load testing, monitoring and suitable scaling configuration |
+| Unauthorised access       | Strong authentication, least privilege and access reviews   |
+| Data loss                 | Backups and tested restoration procedures                   |
+| Service disruption        | Monitoring, appropriate redundancy and recovery planning    |
+
+## 8. Learning Outcomes
+
+Through this project, I am developing my understanding of:
+
+- Cloud computing and its business benefits.
+- The relationship between compute, storage, networking and databases.
+- Horizontal scaling, vertical scaling and elasticity.
+- Consumption-based pricing and cost management.
+- Foundational identity, security and reliability considerations.
+- Translating a business problem into a preliminary cloud solution.
+
+## 9. Validation and Future Work
+
+This project is currently a conceptual design. No Azure resources have been deployed or tested as part of this initial version.
+
+Future improvements will include:
+
+- Drawing a formal architecture diagram.
+- Comparing hosting options for the school's workload.
+- Developing a more detailed cost estimate using explicit assumptions.
+- Documenting identity, access and network requirements.
+- Creating a cost-conscious hands-on implementation if appropriate.
+- Recording test results, limitations and lessons learned.
+
+## 10. Learning Resources
+
+- [Microsoft Learn: Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/)
+- [Azure Architecture Centre](https://learn.microsoft.com/en-us/azure/architecture/)
+- [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
+- [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)
+
+---
+
+*This project is part of my AZ-900 learning portfolio. It represents an evolving understanding of cloud architecture and will be updated as I gain more practical experience.*
