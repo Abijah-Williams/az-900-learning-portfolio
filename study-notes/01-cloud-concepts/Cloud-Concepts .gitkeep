@@ -1,1 +1,50 @@
+# What Is Cloud Computing?
+
+## 1. Definition
+
+Cloud computing is the delivery of computing services over the internet.
+
+## 2. Key Concepts
+
+- **Compute:** Processing power used to run applications.
+- **Storage:** Services used to store data and files.
+- **Networking:** Connections that allow systems to communicate.
+- **Scalability:** Increasing or decreasing capacity to meet requirements.
+- **Elasticity:** Adjusting capacity as demand changes.
+
+## 3. Business Example
+
+A small school can host its website and store learning materials using cloud services instead of purchasing and maintaining all its own physical servers.
+
+## 4. Key Benefits
+
+- On-demand access to computing resources.
+- Ability to scale resources as requirements change.
+- Reduced need to purchase physical infrastructure.
+- Potential to pay according to resource consumption.
+
+## 5. Exam Reminders
+
+- Cloud computing delivers computing services over a network.
+- Scalability and elasticity are related but distinct concepts.
+- Cloud services are not automatically free.
+- Cloud computing does not eliminate every security risk or outage.
+
+## 6. Questions to Review
+
+1. What is cloud computing?
+  Answer: Cloud Computing is the delivery and use of computing resources over 
+          the Internet to provide a service or solve a problem.
+2. How does cloud computing differ from traditional on-premises infrastructure?
+  Answer: Cloud computing differs from on-premises infrastructure in that 
+3. What is the difference between scalability and elasticity?
+4. Why might a small business choose cloud services?
+
+## 7. Practical Application
+
+Describe one organization that could benefit from cloud computing and explain why.
+
+## 8. Learning Resources
+
+- [Microsoft Learn: Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/)
 
